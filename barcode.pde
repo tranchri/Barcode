@@ -9,9 +9,6 @@ void setup () {
 void draw() {
   if (keyPressed) {
     float bar = (key * random(100)) % width;
-    /* to make a vertical line have y1=0
-       y2 = height and keep both x's the same
-    */
     line(bar, 0, bar, height);
   }
 }
